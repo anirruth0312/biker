@@ -1,0 +1,46 @@
+.mybiker{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+    
+}
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#rightwheel,#leftwheel{
+    animation: rotation 1s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+    
+}
+@keyframes bike{
+    from{
+        transform:rotateX(0deg);
+    }
+    to{
+        transform:rotateX(20deg);
+    }
+}
+#biker{
+    animation:bike 1.5s ease infinite alternate;
+    transform-origin: bottom;
+  
+}
+@keyframes ha{
+    from{
+        transform:translateY(5px);
+    }
+    to{
+        transform:translateY(30px);
+    }
+}
+#hat{
+    animation: ha 1.5s alternate ease-in-out infinite;
+}
